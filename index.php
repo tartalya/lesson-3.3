@@ -33,6 +33,7 @@ $powerSupplyThermaltake->setPower('1500watt')
    $basket->showBasketItems();
    
    
-   //var_dump($basket);
+   //echo '<pre>';
+   //print_r($basket);
    
    

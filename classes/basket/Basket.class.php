@@ -82,7 +82,7 @@ class Basket
         
  
         echo $this->itemsCount . ' Товаров в корзине' .'<br><br>';
-        echo ' Итого по заказу ' . $this->totalprice .'<br><br>';
+        echo ' Итого в корзине на сумму ' . $this->totalprice .'<br><br>';
         
         
         }
