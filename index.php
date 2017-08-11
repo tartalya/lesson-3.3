@@ -27,7 +27,7 @@ $powerSupplyThermaltake->setPower('1500watt')
    
    $basket->addToBasket($coolerMaster);
    $basket->addToBasket($powerSupplyThermaltake);
-   //$basket->addToBasket($car);
+   $basket->addToBasket($powerSupplyHiper);
    
    
    $basket->showBasketItems();

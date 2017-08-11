@@ -45,7 +45,7 @@ class Basket
         
         //var_dump($obj->getPrice());
         
-        
+        try {    
         if ($obj->getPrice() > 0) {
             
         $this->items[] = $obj;
@@ -53,15 +53,24 @@ class Basket
             }
             else {
                 
-                echo 'Ошибка добавления в корзину';
-                
+                //echo 'Ошибка добавления в корзину';
+                throw new Exception('Неправильная цена у товара !!! <br><br>');
+            
             }
         }
-    
+ catch (Exception $e) {
+     
+     echo 'Ошибка: ' . $e->getMessage();
+     
+ }
+        }
     public function showBasketItems() 
         {
         
+        
         foreach ($this->items as $obj) {
+            
+            
             
             echo $obj->getBrandname() . ' ' . $obj->getModel() . ' - ';
             
@@ -71,6 +80,7 @@ class Basket
             
         }
         
+ 
         echo $this->itemsCount . ' Товаров в корзине' .'<br><br>';
         echo ' Итого по заказу ' . $this->totalprice .'<br><br>';
         
