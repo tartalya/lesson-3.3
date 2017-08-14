@@ -25,10 +25,6 @@ $powerSupplyThermaltake->setPower('1500watt')
            ->setSpeed(4800);
    
    
-   namespace machines;
-   
-   $car = new tank('зеленый', 'T34');
-   
    
    
    
@@ -75,7 +71,9 @@ $powerSupplyThermaltake->setPower('1500watt')
    
    echo 'Моя утка ' . $animal->getColor();
    
-   $myAuto = new \machines\Tank('Золотой', 'Т34');
+   namespace machines;
+   
+   $myAuto = new Tank('Золотой', 'Т34');
    
    echo '<br><br>';
    
@@ -83,7 +81,9 @@ $powerSupplyThermaltake->setPower('1500watt')
    
    echo '<br><br>';
    
-   $myPencil = new \stationery\Pencil('белый', 'серый');
+   namespace stationery;
+   
+   $myPencil = new Pencil('белый', 'серый');
    
    echo 'У меня есть карандаш ' . $myPencil->getColor() . ' цвета';
         
