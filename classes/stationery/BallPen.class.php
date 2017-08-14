@@ -1,5 +1,6 @@
 <?php
 
+namespace stationery;
 
 class BallPen extends WritingAccessories implements WrAccessories
     {

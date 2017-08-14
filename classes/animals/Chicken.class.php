@@ -1,5 +1,7 @@
 <?php
 
+namespace animals;
+
 class Chicken extends Bird implements BirdInterface
     {
 

@@ -2,6 +2,8 @@
 
 // Придется воссоздать настоящую утку, а не больничную (
 
+namespace animals;
+
 interface BirdInterface
     {
 
@@ -10,6 +12,10 @@ interface BirdInterface
     public function fly();
 
     public function getSound();
+    
+    public function getColor();
+    public function setColor($color);
+    
     }
 
 class Bird implements BirdInterface
@@ -18,7 +24,18 @@ class Bird implements BirdInterface
     protected $color;
     protected $sound;
 
-    public function __construct($color, $sound = '')
+    public function getColor()
+        {
+        return $this->color;
+        }
+
+    public function setColor($color)
+        {
+        $this->color = $color;
+        }
+
+    
+        public function __construct($color, $sound = '')
         {
 
         $this->color = $color;

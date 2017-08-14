@@ -1,5 +1,7 @@
 <?php
 
+namespace catalog\basket;
+
 class Basket 
     {
     

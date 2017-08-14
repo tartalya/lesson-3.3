@@ -1,5 +1,7 @@
 <?php
 
+namespace catalog;
+
 abstract class Product
     {
 

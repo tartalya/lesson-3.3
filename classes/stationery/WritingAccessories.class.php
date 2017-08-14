@@ -1,5 +1,7 @@
 <?php
 
+namespace stationery;
+
 interface WrAccessories
     {
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace machines;
+
 interface CarInterface
     {
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace catalog;
+
 class CpuCooler extends Product
     {
 

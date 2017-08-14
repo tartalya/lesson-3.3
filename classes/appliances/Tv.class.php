@@ -1,5 +1,7 @@
 <?php
 
+namespace appliances;
+
 interface TvInterface 
     {
     function getColor();

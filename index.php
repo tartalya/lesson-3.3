@@ -1,5 +1,9 @@
 <?php
 
+
+namespace catalog;
+
+
 require_once 'loader.php';
 
 $powerSupplyHiper = new PowerSupply('M600', 'black', 3200, '100x100x50', 5,'блоки питания', 'china', 10, 'hiper');
@@ -21,7 +25,14 @@ $powerSupplyThermaltake->setPower('1500watt')
            ->setSpeed(4800);
    
    
+   namespace machines;
+   
    $car = new tank('зеленый', 'T34');
+   
+   
+   
+   
+   namespace catalog\basket;
    
    $basket = new Basket();
    
@@ -48,3 +59,31 @@ $powerSupplyThermaltake->setPower('1500watt')
    
    $order->showOrder();
    
+   
+   namespace appliances;
+   
+   
+   $tv = new Tv();
+   
+   echo 'Я сделал заказ и пошел смотреть свой ' . $tv->getColor() . ' телевизор';
+   
+   echo '<br><br>';
+   
+   namespace animals;
+   
+   $animal = new Duck('красная');
+   
+   echo 'Моя утка ' . $animal->getColor();
+   
+   $myAuto = new \machines\Tank('Золотой', 'Т34');
+   
+   echo '<br><br>';
+   
+   echo 'Мой ' . $myAuto->getModel() . ' ' . $myAuto->color . ' цвета';
+   
+   echo '<br><br>';
+   
+   $myPencil = new \stationery\Pencil('белый', 'серый');
+   
+   echo 'У меня есть карандаш ' . $myPencil->getColor() . ' цвета';
+        

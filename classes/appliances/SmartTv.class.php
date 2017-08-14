@@ -1,5 +1,7 @@
 <?php
 
+namespace appliances;
+
     class SmartTv extends Tv implements SmartTvInterface
         {
         

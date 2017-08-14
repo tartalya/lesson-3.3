@@ -1,5 +1,9 @@
 <?php
 
+
+
+namespace catalog;
+
 class PowerSupply extends Product
     {
 

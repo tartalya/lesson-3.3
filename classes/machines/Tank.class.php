@@ -1,5 +1,7 @@
 <?php
 
+namespace machines;
+
 class Tank extends Car implements TankInterface
     {
 
