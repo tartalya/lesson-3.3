@@ -3,9 +3,9 @@
 class Basket 
     {
     
-    private $items;
-    private $totalprice = 0;
-    private $itemsCount = 0;
+    protected $items;
+    protected $totalprice = 0;
+    protected $itemsCount = 0;
     
   
     
@@ -67,6 +67,8 @@ class Basket
     public function showBasketItems() 
         {
         
+        $this->totalprice = 0;
+        
         
         foreach ($this->items as $obj) {
             
@@ -87,6 +89,23 @@ class Basket
         
         }
         
+    function removeFromBasket($obj)
+        {
+        
+        foreach ($this->items as $key => $item) {
+            
+            if ($item == $obj) {
+                
+                
+                unset($this->items[$key]);
+                $this->itemsCount = $this->itemsCount -1;
+                
+            }
+            
+            
+        }
+        
+        }
     }
 
     

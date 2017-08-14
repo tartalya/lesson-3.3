@@ -32,8 +32,19 @@ $powerSupplyThermaltake->setPower('1500watt')
    
    $basket->showBasketItems();
    
+   $basket->removeFromBasket($powerSupplyHiper);
    
-   //echo '<pre>';
-   //print_r($basket);
+   echo '<br><br>';
+   echo 'После удаления powerSupplyHiper в корзине';
+   echo '<br><br>';
    
+   
+   $basket->showBasketItems();
+   
+   echo '<br><br>';
+   echo '<br><br>';
+   
+   $order = new Order('Александр', 'Ул. уличная 63', 'Почта России', 141983, $basket);
+   
+   $order->showOrder();
    
